@@ -1,0 +1,112 @@
+[debug] [2024-01-19T16:32:23.081Z] ----------------------------------------------------------------------
+[debug] [2024-01-19T16:32:23.082Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ChampionsSoftware\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2024-01-19T16:32:23.083Z] CLI Version:   13.0.3
+[debug] [2024-01-19T16:32:23.083Z] Platform:      win32
+[debug] [2024-01-19T16:32:23.083Z] Node Version:  v18.18.0
+[debug] [2024-01-19T16:32:23.084Z] Time:          Fri Jan 19 2024 16:32:23 GMT+0000 (Greenwich Mean Time)
+[debug] [2024-01-19T16:32:23.084Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-01-19T16:32:23.089Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-19T16:32:23.089Z] > authorizing via signed-in user (info@meta-verse-software.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\MetaVerse\ChampionsSoftware\champions
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2024-01-19T16:32:59.073Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2024-01-19T16:32:59.073Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"championssoftwareweb","name":"championssoftwareweb"}
+[debug] [2024-01-19T16:32:59.544Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2024-01-19T16:32:59.544Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.6748841069079017879"}
+[debug] [2024-01-19T16:32:59.545Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6748841069079017879 [none]
+[debug] [2024-01-19T16:33:00.368Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6748841069079017879 200
+[debug] [2024-01-19T16:33:00.368Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6748841069079017879 {"name":"operations/cp.6748841069079017879"}
+[debug] [2024-01-19T16:33:00.884Z] [Project Creation Poller] Retrying task index 0
+[debug] [2024-01-19T16:33:00.884Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6748841069079017879 [none]
+[debug] [2024-01-19T16:33:01.692Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6748841069079017879 200
+[debug] [2024-01-19T16:33:01.692Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6748841069079017879 {"name":"operations/cp.6748841069079017879","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true}}
+[debug] [2024-01-19T16:33:02.693Z] [Project Creation Poller] Retrying task index 0
+[debug] [2024-01-19T16:33:02.693Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6748841069079017879 [none]
+[debug] [2024-01-19T16:33:03.529Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6748841069079017879 200
+[debug] [2024-01-19T16:33:03.529Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6748841069079017879 {"name":"operations/cp.6748841069079017879","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"800736569857","projectId":"championssoftwareweb","lifecycleState":"ACTIVE","name":"championssoftwareweb","createTime":"2024-01-19T16:33:03.075Z","parent":{"type":"organization","id":"1087848212944"}}}
+[debug] [2024-01-19T16:33:03.532Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/championssoftwareweb:addFirebase [none]
+[debug] [2024-01-19T16:33:06.785Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/championssoftwareweb:addFirebase 200
+[debug] [2024-01-19T16:33:06.785Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/championssoftwareweb:addFirebase {"name":"operations/workflows/YjE3NmJlYjktMzhmYi00MDE5LWJiOWUtYjY3ZTUxOGUwZDU2"}
+[debug] [2024-01-19T16:33:06.786Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YjE3NmJlYjktMzhmYi00MDE5LWJiOWUtYjY3ZTUxOGUwZDU2 [none]
+[debug] [2024-01-19T16:33:07.418Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YjE3NmJlYjktMzhmYi00MDE5LWJiOWUtYjY3ZTUxOGUwZDU2 200
+[debug] [2024-01-19T16:33:07.419Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YjE3NmJlYjktMzhmYi00MDE5LWJiOWUtYjY3ZTUxOGUwZDU2 {"name":"operations/workflows/YjE3NmJlYjktMzhmYi00MDE5LWJiOWUtYjY3ZTUxOGUwZDU2"}
+[debug] [2024-01-19T16:33:07.929Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2024-01-19T16:33:07.931Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YjE3NmJlYjktMzhmYi00MDE5LWJiOWUtYjY3ZTUxOGUwZDU2 [none]
+[debug] [2024-01-19T16:33:08.582Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YjE3NmJlYjktMzhmYi00MDE5LWJiOWUtYjY3ZTUxOGUwZDU2 200
+[debug] [2024-01-19T16:33:08.583Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YjE3NmJlYjktMzhmYi00MDE5LWJiOWUtYjY3ZTUxOGUwZDU2 {"name":"operations/workflows/YjE3NmJlYjktMzhmYi00MDE5LWJiOWUtYjY3ZTUxOGUwZDU2"}
+[debug] [2024-01-19T16:33:09.587Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2024-01-19T16:33:09.588Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YjE3NmJlYjktMzhmYi00MDE5LWJiOWUtYjY3ZTUxOGUwZDU2 [none]
+[debug] [2024-01-19T16:33:10.262Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YjE3NmJlYjktMzhmYi00MDE5LWJiOWUtYjY3ZTUxOGUwZDU2 200
+[debug] [2024-01-19T16:33:10.262Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YjE3NmJlYjktMzhmYi00MDE5LWJiOWUtYjY3ZTUxOGUwZDU2 {"name":"operations/workflows/YjE3NmJlYjktMzhmYi00MDE5LWJiOWUtYjY3ZTUxOGUwZDU2"}
+[debug] [2024-01-19T16:33:12.272Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2024-01-19T16:33:12.272Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YjE3NmJlYjktMzhmYi00MDE5LWJiOWUtYjY3ZTUxOGUwZDU2 [none]
+[debug] [2024-01-19T16:33:13.049Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YjE3NmJlYjktMzhmYi00MDE5LWJiOWUtYjY3ZTUxOGUwZDU2 200
+[debug] [2024-01-19T16:33:13.049Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YjE3NmJlYjktMzhmYi00MDE5LWJiOWUtYjY3ZTUxOGUwZDU2 {"name":"operations/workflows/YjE3NmJlYjktMzhmYi00MDE5LWJiOWUtYjY3ZTUxOGUwZDU2"}
+[debug] [2024-01-19T16:33:17.060Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2024-01-19T16:33:17.060Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YjE3NmJlYjktMzhmYi00MDE5LWJiOWUtYjY3ZTUxOGUwZDU2 [none]
+[debug] [2024-01-19T16:33:17.698Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YjE3NmJlYjktMzhmYi00MDE5LWJiOWUtYjY3ZTUxOGUwZDU2 200
+[debug] [2024-01-19T16:33:17.698Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YjE3NmJlYjktMzhmYi00MDE5LWJiOWUtYjY3ZTUxOGUwZDU2 {"name":"operations/workflows/YjE3NmJlYjktMzhmYi00MDE5LWJiOWUtYjY3ZTUxOGUwZDU2","done":true,"response":{"@type":"type.googleapis.com/google.firebase.service.v1beta1.FirebaseProject","projectId":"championssoftwareweb","projectNumber":"800736569857","displayName":"championssoftwareweb","name":"projects/championssoftwareweb","resources":{"hostingSite":"championssoftwareweb"}}}
+[info] 
+[info] === Your Firebase project is ready! ===
+[info] 
+[info] Project information:
+[info]    - Project ID: championssoftwareweb
+[info]    - Project Name: championssoftwareweb
+[info] 
+[info] Firebase console is available at
+[info] https://console.firebase.google.com/project/championssoftwareweb/overview
+[info] i  Using project championssoftwareweb (championssoftwareweb) 
+[info] 
+=== Hosting Setup
+[debug] [2024-01-19T16:33:17.710Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/championssoftwareweb [none]
+[debug] [2024-01-19T16:33:18.406Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/championssoftwareweb 200
+[debug] [2024-01-19T16:33:18.406Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/championssoftwareweb {"projectId":"championssoftwareweb","projectNumber":"800736569857","displayName":"championssoftwareweb","name":"projects/championssoftwareweb","resources":{"hostingSite":"championssoftwareweb"},"state":"ACTIVE","etag":"1_8ed86dbd-d95d-495f-bb7a-8c39f870745b"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2024-01-19T16:42:29.533Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2024-01-19T16:42:29.594Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2024-01-19T16:42:29.594Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.7.2","browserURL":"https://www.gstatic.com/firebasejs/10.7.2/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.7.2/firebase.tgz"},"live":{"version":"10.7","browserURL":"https://www.gstatic.com/firebasejs/live/10.7/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.7/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.7.2/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.7.2/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.7.2/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.7.2/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.7.2/firebase-auth/cordova.js","functions":"https://www.gstatic.com/firebasejs/10.7.2/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.7.2/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.7.2/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.7.2/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.7.2/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.7.2/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.7.2/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.7.2/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.7.2/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.7.2/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.7.2/firebase-firestore.memory.js"}}
+[info] +  Wrote public/index.html 
+[info] 
+[info] i  Detected a .git folder at C:\MetaVerse\ChampionsSoftware\champions 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=256082595&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2024-01-19T16:42:46.242Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2024-01-19T16:42:46.242Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2024-01-19T16:42:46.676Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2024-01-19T16:42:46.677Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2024-01-19T16:42:46.685Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2024-01-19T16:42:46.950Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2024-01-19T16:42:46.950Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"MetaVerseSoftwareLtd","id":156444219,"node_id":"U_kgDOCVMmOw","avatar_url":"https://avatars.githubusercontent.com/u/156444219?v=4","gravatar_id":"","url":"https://api.github.com/users/MetaVerseSoftwareLtd","html_url":"https://github.com/MetaVerseSoftwareLtd","followers_url":"https://api.github.com/users/MetaVerseSoftwareLtd/followers","following_url":"https://api.github.com/users/MetaVerseSoftwareLtd/following{/other_user}","gists_url":"https://api.github.com/users/MetaVerseSoftwareLtd/gists{/gist_id}","starred_url":"https://api.github.com/users/MetaVerseSoftwareLtd/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/MetaVerseSoftwareLtd/subscriptions","organizations_url":"https://api.github.com/users/MetaVerseSoftwareLtd/orgs","repos_url":"https://api.github.com/users/MetaVerseSoftwareLtd/repos","events_url":"https://api.github.com/users/MetaVerseSoftwareLtd/events{/privacy}","received_events_url":"https://api.github.com/users/MetaVerseSoftwareLtd/received_events","type":"User","site_admin":false,"name":"Meta Verse Software Limited","company":"Meta Verse Software Limited","blog":"","location":null,"email":null,"hireable":null,"bio":"Building the future in Office Automation.","twitter_username":null,"public_repos":0,"public_gists":0,"followers":0,"following":0,"created_at":"2024-01-12T14:28:46Z","updated_at":"2024-01-12T14:32:42Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":0,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as MetaVerseSoftwareLtd 
+[info] 
